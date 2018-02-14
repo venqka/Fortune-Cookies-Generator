@@ -1,0 +1,95 @@
+/****************************************************
+	Fortune Cookies frontend styles
+*****************************************************/
+
+/*Single template*/
+
+.fc-template-cookie-content {
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+}
+
+.single-fortune-cookie .fc-template-cookie-content {
+  width: 50%;
+}
+
+/*Archive template*/
+
+.fc-archive-cookie-wrap {
+  width: 100%;
+  margin: 0px auto;
+}
+
+.post-type-archive-fortune-cookie, .fc-template-cookie-content {
+  width: 100%;
+}
+
+/*Shortcode*/
+
+.fortune-cookie-wrap {
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+}
+.fortune-cookie-wrap button {
+  margin: 0px auto;
+}
+
+.fortune-cookie {
+	height: 150px;
+	display: none;
+}
+
+.fortune-cookie p {
+	display: none;
+}
+
+.fc-cookie-content {
+	height: 80px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fc-category {
+  border: 1px solid #111;
+  display: inline-block;
+  padding: 7px;
+  margin: 5px;
+}
