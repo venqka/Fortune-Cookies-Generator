@@ -6,9 +6,51 @@
 
 *****************************************************/
 
-// jQuery(document).ready(function(){
-// 	console.log("loaded");
-// });
+jQuery(document).ready(function(){
+
+	jQuery.ajax({
+		url: fc_ajax.ajax_url,
+		type: 'POST',
+		data: {
+			action: 'get_fortune_cookie',
+			nonce: fc_ajax.ajax_nonce
+		}, 
+		success : function(response) {
+			console.log(response);
+			jQuery(".fc-widget-fortune-cookie").show();
+			jQuery(".fc-widget-fortune-cookie .fc-share").remove();
+			jQuery(".fc-widget-fortune-cookie p").remove();
+			jQuery(".fc-widget-fortune-cookie").append(response);
+			jQuery(".fc-widget-fortune-cookie p").show('slow');
+		},
+		error : function(error) {
+			console.log(error);
+		}
+
+	});//jQuery.ajax
+
+		jQuery.ajax({
+		url: fc_ajax.ajax_url,
+		type: 'POST',
+		data: {
+			action: 'get_fortune_cookie',
+			nonce: fc_ajax.ajax_nonce
+		}, 
+		success : function(response) {
+			console.log(response);
+			jQuery(".fortune-cookie").show();
+			jQuery(".fortune-cookie .fc-share").remove();
+			jQuery(".fortune-cookie p").remove();
+			jQuery(".fortune-cookie").append(response);
+			jQuery(".fortune-cookie p").show('slow');
+		},
+		error : function(error) {
+			console.log(error);
+		}
+
+	});//jQuery.ajax
+
+});
 
 //Ajax request
 
